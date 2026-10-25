@@ -1,0 +1,180 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{qtree}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+% \usepackage{mathpartir}
+\usepackage{bbm}
+\usepackage[mathcal]{euscript}
+% \usepackage[utf8]{inputenc}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern} \title{No localizable particles in relativistic quantum theories}
+\author{Hans Halvorson}
+\date[November 2013]{November 12, 2013} \usetheme{Copenhagen}
+\begin{document}
+\def\2{\mathcal}
+\def\7{\mathbb}
+\newenvironment{proenv}{\only{\setbeamercolor{local structure}{fg=green}}}{}
+\newenvironment{conenv}{\only{\setbeamercolor{local structure}{fg=red}}}{}  
+\newenvironment{neuenv}{\only{\setbeamercolor{local
+      structure}{fg=yellow}}}{}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Hegerfeldt's theorem}
+
+  Suppose that $U_t=e^{itH}$, where $H$ is a self-adjoint operator
+  with half-bounded spectrum.  Let $A$ be a positive operator.  Then
+  for any unit vector $\psi$, either
+$$ \langle U_t\psi ,AU_t\psi \rangle \: \neq \: 0,\qquad \text{for almost all} \; t\in \7R ,$$
+or
+$$ \langle U_t\psi ,AU_t\psi \rangle \: = \: 0,\qquad \text{for all} \; t\in\7R .$$
+
+\bigskip \bigskip \textbf{corollary:} If $\langle U_t\psi
+,AU_t\psi\rangle =0$ for $t$ in an open interval \textcolor{blue}{no
+  matter how small} then it is constantly $0$.
+
+\end{frame}
+
+\begin{frame}{localization systems}
+
+  A mapping $\Delta\mapsto E_{\Delta}$ from spatial regions to
+  projection operators on $\2H$.
+
+  \bigskip A mapping $x\mapsto U(x)$ from the translation group on
+  spacetime to unitary operators on~$\2H$.
+
+  \bigskip \textcolor{blue}{translation covariance:} for any $\Delta$
+  and for any translation $x$, $U(x)E_\Delta U(x)^* = E_{\Delta +x}$.
+
+\end{frame}
+
+
+\begin{frame}{localization systems}
+
+  \bigskip \textcolor{blue}{localizability:} if $\Delta$ and $\Delta
+  '$ are disjoint regions of space at a fixed time then $E_\Delta$ and
+  $E_{\Delta '}$ are orthogonal.
+
+  \bigskip \textcolor{blue}{energy bounded below:} for any timelike
+  $x$, the infinitesimal generator $H_x$ of the one-parameter group
+  $t\mapsto U(tx)$ has spectrum bounded from below.
+
+  \bigskip \textcolor{blue}{microcausality:} if $\Delta$ and $\Delta
+  '$ are disjoint, and if the distance between $\Delta$ and $\Delta '$
+  is nonzero, then for any timelike $x$, there is an $\epsilon >0$
+  such that $[E_\Delta ,E_{\Delta +tx}]=0$ whenever $0\leq
+  t<\epsilon$.
+
+
+\end{frame}
+
+\begin{frame}{Malament's theorem}
+
+Let $(H,\Delta\mapsto E_\Delta ,x\mapsto U(x))$ be a localization system over Minkowski spacetime that satisfies:
+\begin{enumerate}
+\item translation covariance
+\item localizability
+\item microcausality
+\item energy bounded below
+\end{enumerate}
+
+\bigskip Then $E_\Delta =0$ for all $\Delta$.
+
+
+%% TO DO: explain the proof!
+
+\end{frame}
+
+
+\begin{frame}{unsharp localization systems}
+
+  \textbf{spectral theorem:} self-adjoint operators correspond to PV
+  measures.
+
+  \bigskip \textbf{but:} not all observables correspond to PV
+  measures; \textcolor{blue}{unsharp observables} correspond to
+  \textcolor{blue}{POV measures}.
+
+  \bigskip An \textbf{unsharp localization system} consists of a POV
+  measure $\Delta\mapsto A_\Delta$ and a unitary representation
+  $x\mapsto U(x)$ of the translation group.
+
+\end{frame}
+
+
+\begin{frame}{unsharp localization}
+
+ \textbf{localizability:} If $\Delta$ and $\Delta '$ are disjoint
+  spatial regions then $A_\Delta +A_{\Delta '}\leq I$.
+
+  \bigskip \textbf{theorem:} If $(\Delta\mapsto A_\Delta ,x\mapsto
+  U(x))$ satisfies:
+\begin{enumerate}
+\item positive energy
+\item localizability
+\item microcausality
+\end{enumerate}
+\bigskip Then $A_\Delta =0$ for all $\Delta$.
+
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{local number operators}
+
+  Let $\Delta\mapsto N_\Delta$ be a mapping from spatial regions to
+  positive, possibly unbounded operators.
+
+  \bigskip \bigskip \textcolor{blue}{additivity:} if $\Delta$ and $\Delta '$ are
+  disjoint regions then $N_{\Delta\cup\Delta '}=N_{\Delta}+N_{\Delta
+    '}$.
+
+  \bigskip \textcolor{blue}{number conservation:} if $\{ \Delta
+  _n:n\in \7N \}$ is a disjoint covering of $S$, then the sum $\Sigma
+  _nN_{\Delta _n}$ converges to a densely defined, self-adjoint
+  operator $N$ on $\2H$, and $U(x)NU(x)^* = N$ for any timelike
+  translation of $x$ of $M$.
+
+ 
+\end{frame}
+
+
+\begin{frame}{no local number operators}
+
+  Suppose that the system $(\2H ,\Delta\mapsto N_{\Delta},x\mapsto
+  U(x))$ of local number operators satisfies:
+\begin{enumerate}
+\item additivity
+\item translation covariance
+\item energy bounded below
+\item number conservation
+\item microcausality
+\end{enumerate}
+\bigskip Then $N_{\Delta}=0$ for all $\Delta$.
+
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,482 @@
+\documentclass{beamer}
+% \usepackage{color}
+\usepackage{graphicx}
+\usepackage{setspace}
+\setstretch{1.5}
+% \usepackage[all,cmtip]{xy}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{qtree}
+\usepackage{stmaryrd}
+% \usepackage{diagxy}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+% \usepackage{mathpartir}
+\usepackage{bbm}
+%\usepackage{pictexwd,dcpic}
+% \usepackage[mathcal]{euscript}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+\title{reality and equivalence \\ in algebraic quantum theory}
+\author{Hans Halvorson}
+\date{Nagoya Winter Workshop \\ March 11, 2015}
+% \usetheme{Pittsburgh}
+\usetheme{Singapore}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+% \usetheme{Singapore}
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+\usepackage{eucal}
+\def\2{\mathcal}
+\def\7{\mathfrak}
+
+
+\begin{document}
+
+\begin{frame}
+
+\maketitle
+
+\end{frame}
+
+
+\begin{frame}{overview}
+
+\begin{enumerate}
+
+\item preliminaries
+
+\item inequivalent representations
+
+\item equivalent QFTs
+
+\item same physics on all spacetimes
+
+
+\end{enumerate}
+
+
+
+\end{frame}
+
+
+\begin{frame}{what does equivalence have to do with reality?}
+
+  \begin{centering} \textcolor{blue}{\bf mantra:} reality is invariant
+    relative to equivalence of true descriptions of the
+    world. \end{centering}
+
+% coordinates in differential geometry
+
+% electrostatic potential
+
+% Japanese vs. English descriptions
+
+
+\end{frame}
+
+
+
+\begin{frame}{what sorts of things can be equivalent?}
+
+\begin{itemize}
+\item sentences
+\item descriptions
+\item theories
+\begin{itemize}
+\item sentences?
+\item models?
+\item functors?
+\end{itemize}
+\item representations
+\item Lagrangians
+
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{inequivalent quantizations}
+
+  \textcolor{green}{OBJECTIVE:} describe a quantum system
+  corresponding to a classical system with configuration space $X$.
+  
+
+  \bigskip
+
+  \textcolor{red}{OBSTACLE:} embarrassment of riches --- if $X$ is not
+  simply connected, then there are inequivalent quantum theories
+  corresponding to $X$.
+
+\end{frame}
+
+\begin{frame}{from quantization to representation}
+
+\begin{itemize}
+\item quantization: given configuration space $X$, find an
+  corresponding quantum theory (hilbert space and operators satisfying
+  certain algebraic relations).
+\item Landsman's maneuver: there is a unique $C^*$-algebra $A[X]$ such
+  that Hilbert space representations of $A[X]$ are in one-to-one
+  correspondence with quantizations of $X$.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{algebraic imperialism (I.E. Segal)}
+
+  \begin{quote} ``The physical content of the theory is completely
+    contained in the abstract algebra.'' \end{quote}
+
+  \bigskip \textbf{Observables:} self-adjoint operators in $A$.
+
+\bigskip \textbf{States:} positive, linear, normalized maps from
+observables to $\mathbb{R}$.
+
+
+\bigskip \textbf{Dynamics:} one-parameter group of automorphisms of
+$A$.
+
+
+
+
+\end{frame}
+
+\begin{frame}{hilbert space conservatism} 
+
+
+  \textbf{Representation:} a module $\pi :A\times H\to H$
+
+  \bigskip \textbf{Fact:} A representation $\pi :A\times H\to H$
+  induces a map $\pi ^*:T_1(H)\to S(A)$, given by
+$$ \pi ^*(d)(a) \: = \: \mathsf{Tr}(d\pi (a)) .$$
+
+
+\bigskip \textbf{Gelfand-Naimark-Segal Theorem:} $\forall \omega \in
+S(A)$, there is a Hilbert space $H_\omega$, an operator $d\in
+T_1(H_\omega )$, and a representation $\pi _\omega :A\times
+H_\omega\to H_\omega$ such that $\omega =\pi _\omega ^*(d)$.
+
+\end{frame}
+
+
+
+\begin{frame}{unitarily equivalent representations}
+
+  A unitary equivalence $w:(H,\pi )\to (K,\phi )$ is a unitary map
+  $w:H\to K$ that makes the following diagram commute:
+
+$$
+\begin{tikzcd}[ampersand replacement=\&]
+  A \times H \arrow{r}{\pi } \arrow{d}[left]{1\times w } \& H \arrow{d}[right]{w} \\
+  A \times K \arrow{r}[below]{\phi } \& K
+\end{tikzcd}
+$$
+
+\end{frame}
+
+
+\begin{frame}{disregarding inequivalent representations}
+
+  \textbf{Fell's theorem:} for any $d\in T_1(H)$, operators $a_1,\dots
+  ,a_n\in A$, and $\epsilon >0$, there is a $d'\in T_1(K)$ such that
+$$ \bigl| \mathsf{Tr}(d\pi(a_i))- \mathsf{Tr}(d'\phi (a_i)) \bigr| \: < \: \epsilon .$$
+
+\bigskip Claim (Segal): any two representations of $A[X]$ are
+physically equivalent.
+
+
+\end{frame}
+
+
+\begin{frame}{regarding inequivalent representations}
+
+  Claim (Ruetsche): physically equivalent representations are
+  unitarily equivalent.
+
+  \bigskip $\Rightarrow$ for non simply connected $X$, there are
+  physically inequivalent representations of $A[X]$.
+
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{what's the issue?}
+
+\begin{enumerate}
+\item hilbert space conservatism: there is one correct representation
+
+  {\small $\Rightarrow$ choosing a representation involves a
+    further theoretical commitment}
+
+\item algebraic imperialism: all physical information is in the
+  abstract algebra of observables
+
+  \smallskip {\small $\Rightarrow$ choosing a representation entails no further theoretical commitment}
+\end{enumerate}
+
+\end{frame}
+
+
+% \begin{frame}{algebraic quantum theory}
+
+%   A $\mathbf{C^*}$\textbf{-algebra} is:
+% \begin{itemize}
+% \item An algebra over $\mathbb{C}$, i.e.\ a ring with complex scalar
+%   multiplication;
+% \item with a conjugate-linear, product-reversing involution $a\mapsto
+%   a^*$,
+% \item with a norm $\|\cdot \| :A\to \mathbb{R}^+$ that satisfies the
+%   $C^*$-property $\| a^*a\| = \| a\| ^2$,
+% \item and that is complete relative to this norm.
+% \end{itemize}
+
+% \bigskip \textbf{Example:} The algebra of bounded linear operators on
+% a Hilbert space $H$. 
+
+% \end{frame}
+
+
+
+\begin{frame}{problems for hilbert space conservatism}
+
+\begin{itemize}
+\item underdetermination: what reason for choosing a representation?
+\item what is gained by choosing a representation?
+\item what is lost by choosing a representation?
+\item what kind of epistemic commitment is it to choose a
+  representation? 
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Baker's conundrum}
+
+\begin{enumerate}
+\item physical equivalence $\Leftrightarrow$ intertranslatability
+  (Poincar\'e, Glymour, Quine, etc.)
+\item fact: there are inequivalent representations that are
+  intertranslatable.
+\item conclusion: there are inequivalent representations that are
+  physically equivalent.
+\end{enumerate}
+
+
+\end{frame}
+
+
+% now for the free Fermi field
+
+%% draw picture A(O) \subseteq F(O)
+
+%% A(O) = gauge invariant elements of F(O)
+
+%% A = inductive limit of all A(O), same with F
+
+%% two subspaces H_{-} and H_{+} that are invariant under action of A
+
+%% Fact: \pi _{-}(A) and \pi _{+}(A) are unitarily inequivalent, yet isomorphic
+
+%% Puzzle: Why not just throw away one of \pi _{-} or \pi _{+} ?
+
+
+
+% \begin{frame}{Example 1: free Majorana field}
+
+% \begin{itemize}
+% \item gauge transformation: $\gamma :F\to F$
+
+% %% puzzle: if A is invariant under \gamma , then how does \gamma change sectors?
+
+% %% perhaps Morsella explains the local endomorphisms?
+
+% \item observables are fixed points in $F$ under action of $\gamma$
+% \item two inequivalent representations: $\pi _+$ vacuum, $\pi _{-}$ charged
+% \item localized automorphisms of $A$
+% $$ \pi _{-}(a) \: \cong \: \pi _{+}(\theta (a)) .$$
+% \item $H_{+}$ and $H_{-}$ are dynamical islands
+% \item field operators map $H_{+}$ to $H_{-}$.
+% \end{itemize}
+
+
+% %% open question: what does the free Fermi field model explain?
+
+
+
+
+% \end{frame}
+
+
+
+
+\begin{frame}{Buridan's Ass meets QFT}
+
+\begin{enumerate}
+\item The system can be represented by $\pi$ or by $\phi$, but not by
+  both.
+%% must choose a state
+%% does choosing a state require choosing a representation?
+%% does choosing a state give a representation for free?
+\item If the world is represented by $\pi$, it could equally well be
+  represented by $\phi$.
+%% the two representations are isomorphic in all ways!
+%% here I agree with Baker.  These two reps have the same representational power
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{the dilemma restated}
+
+\begin{enumerate}
+%% Ruetsche and Earman
+\item break the symmetry between the two representations
+%% Baker
+\item deny that there is any choice to be made
+%% suppose that Buridan's ass accepts PII
+%% he concludes that he is seeing double
+%% .. or suffering from an illusion
+%% the correct description is one in which there is just one haystack
+\end{enumerate}
+
+\bigskip
+common theme: ``freedom to choose a representation'' is
+theoretically insignificant
+
+% compare with: ``freedom to choose a coordinate chart'' is
+% theoretically insignificant
+
+\end{frame}
+
+
+
+\begin{frame}{equivalent nets}
+
+  Let $\mathbb{K}$ be a family of ``nice'' subsets of Minkowski
+  spacetime.  A \textbf{net of observable algebras} is a map
+  $A:\mathbb{K}\to \mathbf{CStar}$ satisfying:
+
+\begin{itemize}
+\item isotony: if $O_1\subseteq O_2$ then $A(O_1)\subseteq A(O_2)$
+\item microcausality: if $O_1\perp O_2$ then $[A(O_1),A(O_2)]=\{ 0\}$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{equivalent nets}
+
+  Let $A,B:\mathbb{K}\to \mathbf{CStar}$ be nets of observable
+  algebras over Minkowski spacetime.  A morphism $\alpha :A\to B$ is
+  defined as a family $\alpha _O:A(O)\to B(O)$ of $*$-homomorphisms
+  such that for any $O_1\subseteq O_2$, the following diagram
+  commutes:
+
+$$
+\begin{tikzcd}[ampersand replacement=\&]
+  A(O_2) \arrow{r}{\alpha _{O_2}}    \& B(O_2) \\
+  A(O_1) \arrow{u}[left]{ } \arrow{r}[below]{\alpha _{O_1}} \& B(O_1) \arrow{u}[right]{ } 
+\end{tikzcd}
+$$
+
+\end{frame}
+
+
+\begin{frame}{equivalent nets}
+
+  \textcolor{purple}{question:} how much information about
+  \textbf{dynamics} is contained in the net?
+
+  \bigskip example: let $A_m$ be the net for the free Bose field of
+  mass $m>0$.  Are $A_m$ and $A_{m'}$ equivalent nets when $m\neq m'$?
+
+  \bigskip (It is known that $A_m(O)\cong A_{m'}(O)$ for all $O$.
+  ``No'' would indicate that the net contains information about the
+  dynamics.)
+
+
+\end{frame}
+
+\begin{frame}{locally covariant QFT}
+
+
+  Let $\mathbf{Loc}$ be the category whose objects are globally
+  hyperbolic manifolds, with Lorentzian metric, orientation, and time
+  orientation; and whose arrows are causally convex embeddings.
+
+  \bigskip A \textcolor{purple}{locally covariant QFT} is a covariant
+  functor $A$ from $\mathbf{Loc}$ to $\mathbf{CStar}$.
+
+
+
+\end{frame}
+
+
+\begin{frame}{equivalent QFTs}
+
+  \textbf{definition:} a \textcolor{purple}{morphism} of locally
+  covariant QFTs is a natural transformation $\alpha :A\to B$.  This
+  morphism is called an \textcolor{purple}{equivalence} just in case
+  each $\alpha _M$ is an isomorphism.
+
+\end{frame}
+
+
+\begin{frame}{equivalent QFTs}
+
+  \textcolor{purple}{question:} suppose $A,B$ are locally covariant
+  QFTs such that $A(M)\cong B(M)$, for all spacetimes $M$.  Does it
+  follow that $A$ and $B$ are equivalent?
+
+  \bigskip \textcolor{purple}{answer:} no (Fewster)
+
+
+
+
+\end{frame}
+
+
+\begin{frame}{same physics on all spacetimes}
+
+  \textbf{constructive QFT:} same construction recipe, different
+  background spacetimes
+
+  \bigskip \textbf{reverse engineering:} given a locally covariant QFT
+  $A$, when should we say that $A$ describe the ``same physics'' on
+  all spacetimes?
+
+
+
+
+
+\end{frame}
+
+
+\begin{frame}{same physics on all spacetimes}
+
+  \textbf{weak necessary condition:} for two QFTs $A,B$, if both
+  describe the same physics on all spacetimes, and $A(M)\cong B(M)$
+  for some spacetime $M$, then $A\cong B$.
+
+
+\end{frame}
+
+
+
+
+\end{document}

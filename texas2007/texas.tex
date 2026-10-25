@@ -1,0 +1,520 @@
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+% \usetheme{Rochester}
+\usecolortheme{orchid}
+\def\ol{\overline}
+\usepackage{amsthm}
+\newtheorem{prop}{Proposal}
+\newtheorem{ansatz}{Ansatz}
+\newtheorem{thm}{Theorem}
+\title{Antimatter and the Metaphysics of Quantity} 
+\author{Hans Halvorson \\ (with David Baker) \\
+  {\small Princeton University}} 
+\date{November 30, 2007}
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%% Is antimatter discovery trivial ... like discovering that there is
+%% another car going exactly the same speed, but to the south?
+
+
+% \section*{Introduction}
+% \begin{frame}
+% \begin{itemize}
+% \item Basic concepts of contemporary metaphysics: object, property,
+%   relation, disposition, time, etc..  
+% % Can also define quantities, etc., in terms of basic concepts.
+
+% \item The notion of \textbf{opposite} is not ever invoked ever in
+%   contemporary metaphysics, and is certainly not thought to be
+%   fundamental.
+
+% \item Today's goals: 
+% \begin{itemize}
+% \item Use contemporary physics to motivate and explicate a concept of
+%   ``opposite''.
+% \item Show that the opposite concept is fundamental.
+% \end{itemize}
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Metaphysical Lessons}
+
+% %% MOTIVATION: WHY SHOULD PHILOSOPHERS CARE %%
+
+% %% asymmetry of matter vs. antimatter
+% %% what does this tell us?
+% %% is it connected to assymmetry of time?
+
+% %% two concepts of "negation" - semantic and ontological??
+
+% %% lessons for metaphysics: contemporary analytic metaphysics seems to
+% %% have no use for a concept of the *opposite* of a thing
+
+% %% 20th century physics, reistatement of the concept of "vacuum" 
+
+% %% What is vacuum? It is nothing.
+
+% %%  
+% \pause
+% \begin{enumerate}
+% \item Each essential quantity $\mathcal{C}$ has a unique privileged
+%   neutral value $1_{\mathcal{C}}$.
+% \item There is a relation of ``opposition'' between fundamental
+%   properties.
+%   %% not definable in terms of other physical relations; and applies
+%   %% to each fundamental physical object. 
+% %% note that this relation is symmetric and it *can* hold between an
+%   %% object and itself
+% \item Metaphysical accounts of \textbf{quantity} should be revised in
+%   light of recent empirical discoveries.
+% \end{enumerate}
+
+
+% \end{frame}
+
+\section*{Outline}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+
+\section{Philosophical accounts of quantity}
+\begin{frame}
+  \frametitle{Quantities and determinables}
+\pause
+\begin{tabular}{cc|cc}
+  Determinable && Determinate \\ 
+  \hline\hline & & & \\ color && red, green, blue, \dots \\ &&& \\
+  \hline &&& \\ mass && non-negative real number \\ &&& \\
+  \hline &&& \\ position &&  point in space  \\ &&& \\
+  \hline &&& \\ isospin  &&  $0\,,\,\frac{1}{2}\,,\,1\,,\,\frac{3}{2}\,,\,\dots$ 
+\end{tabular}
+
+
+\end{frame}
+\begin{frame}
+  \begin{prop} Quantities and determinables are the same
+    thing.  \end{prop} \pause
+  \begin{prop} A determinable/quantity is a collection of mutually
+    exclusive and exhaustive properties.  \end{prop} \pause
+%% note to self: so, this  would mean that having the value zero is
+%% having a definite value ... not lacking any determinate value for
+%% that determinable
+  \begin{prop}[Mundy]
+    A quantity is a semi-group; i.e.\ a set $S$ with a binary function
+    $\quad\star :S\times S\to S$.
+\end{prop} \pause
+\begin{prop}[Denby] 
+  A quantity is a pair $\langle S,f\rangle$ where $S$ is a
+  \emph{metric space}, and $f$ is a function from concrete particulars
+  to $S$. \end{prop}
+\end{frame}
+
+
+\begin{frame}\frametitle{Causes for worry}
+\pause
+
+\begin{itemize}
+\item An account of the metaphysics of quantity should especially
+  accommodate the use of the concept in fundamental physics. \pause
+\item Mundy's account is based on examples from phenomenological
+  physics (measurement theory). \pause
+\item Denby's account is based on a pre-scientific notion of
+  ``similarity'' between properties --- e.g.\ ``redness'' is more
+  similar to ``purpleness'' than it is to ``blueness''.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Input from current physics?} \pause
+\begin{itemize}
+\item Fine and Teller (circa 1978): Continuous quantities have only
+  fuzzy values.  \pause Halvorson (2001): No. \pause Arntzenius
+  (2003): Yes. \pause
+\end{itemize}
+\begin{itemize}
+\item Determinates are structured \dots but \emph{not} necessarily
+  with the structure of a semigroup, or a metric.  \pause
+  %% Here I'm thinking of isospin, but .... hmm .... wouldn't we say
+  %% that isospin 1 is closer to 1/2 than is 2?
+
+  %% Is there a natural topology on the category of representations of
+  %% a compact group?  Is it always a metric topology?
+  %% Look at the Folland book -- apparently it is always the discrete
+  %% topology
+\end{itemize}
+\end{frame}
+
+\section{A brief history of antimatter}
+\begin{frame}
+\frametitle{A brief history of antimatter}
+\begin{itemize}
+\item 1927: Dirac's equation for relativistic electrons permits two
+  solutions, one with positive energy and one with negative energy. \pause
+\item 1932: Carl Anderson confirms the existence of the antielectron
+  (positron); 1955: antiproton. \pause
+  %% antiparticle of the electron
+\item ca 1970--80: The standard model entails that every fundamental
+  particle has an antiparticle. \pause
+\item 1996: Synthesis of atoms of antihydrogen (antiproton+positron)
+  at CERN. \pause
+\item Ongoing: Apparent asymmetry of matter and antimatter in our
+  universe is one of the greatest unsolved problems in contemporary
+  physics. \pause
+\item 1969--1990: Doplicher, Haag, and Roberts explicate the structure
+  of fundamental physical quantities
+\end{itemize}
+
+\end{frame}
+
+
+
+\section{What antimatter could not be}
+\begin{frame}
+\frametitle{Is antimatter a \emph{philosophical} topic?}
+\pause
+
+Two extreme, but wrong, positions:
+\begin{itemize}
+\item Contemporary physics shows that besides ``being'' (or existence)
+  there is ``anti-being'' (or anti-existence).  The intermediate
+  between the two is nothingness (the void). \pause
+\item ``Antimatter'' is a misnomer: everything is matter. \pause
+\end{itemize}
+
+
+\bigskip Other reason to care about antimatter: Asymmetry of
+matter/antimatter connected to asymmetry of future/past? 
+
+
+
+\end{frame}
+
+\begin{frame}
+
+\begin{prop} The antiparticle $\ol p$ of particle $p$ is something
+    that is disposed to \emph{annihilate}~$p$.  \end{prop}
+
+\bigskip \pause
+\begin{itemize}
+\item Not a good analysis (cf.\ ``opium causes sleep because it has a
+  dormative virtue'') \pause
+\item Antimatter is definable even in theories that have no
+  interactions. \pause
+\item Not a necessary condition: Antiparticles do not always
+  annihilate their antiparticles, but sometimes produce other
+  particles \pause
+\item Not a necessary condition: Some particles are their own
+  antiparticles (e.g.\ photon, neutral pion)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \begin{prop}[Feynman, Arntzenius and Greaves] Antiparticles are
+    particles moving backwards in time. \end{prop} \pause
+
+  \begin{itemize}
+  \item Feynman's heuristic reasoning does not amount to an
+    analysis. \pause
+  \item This claim can be explicated as a mathematical statement that
+    is provably true \dots but which undercuts the provocative
+    interpretation of particles moving in opposite directions in
+    time. \pause
+  \item The claim is not general enough: the antimatter concept is
+    more general than the particle concept.
+
+  \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+  \begin{prop} Antiparticles have conjugate wavefunctions. \end{prop}
+  \bigskip \pause
+
+%% this would undercut fundamentality, because it would make the
+%% antimatter concept be contingent on the idiosyncratic fact that our
+%% best theory (viz.\ QM) uses complex amplitudes
+
+  \textbf{Definition:} A \emph{wavefunction} $\psi$ is an assignment
+  of complex numbers to the determinates of a determinable.
+
+  \bigskip A (nonzero) complex number is a pair consisting of a
+  length, and an angle.
+$$ \psi (e) \quad = \quad (\text{probability},\text{phase}) $$
+
+\bigskip Complex Conjugation
+$$(\text{probability},\text{phase}) \quad
+\stackrel{\text{conjugate}}{\Longrightarrow} \quad
+(\text{probability},-\text{phase})$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conjugate wavefunction}
+
+\begin{itemize}
+\item Definition:
+$$\overline{\psi}(e) \quad =\quad (\psi (e))^* $$
+The wavefunctions $\psi$and $\ol\psi$ assign the same probabilities to
+all determinate values. \pause
+\item Wrong: the conjugate wavefunction is basis-dependent; cannot
+  ground a fundamental physical relation.
+%% similar to problem with setting zero arbitrarily
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+  \begin{prop}[Oxford Dictionary of Physics] The antiparticle of $p$
+    is the particle $\ol p$ with \emph{opposite} values for each
+    quantity. \end{prop}
+
+
+\bigskip \pause
+\begin{itemize}
+\item Strictly false: some quantities' values are not reversed (e.g.\
+  position, velocity) \pause
+\item Even false for ``essential'' quantities.  (e.g.\ mass) \pause
+  %% e.g. mass of electron and positron are the same e.g. isospin of
+  %% ...
+\item The concept of ``opposite value'' is left unanalyzed \newline On
+  going philosophical accounts of quantity (e.g.\ Mundy) the specific
+  assignment of real numbers to properties is conventional
+\end{itemize}
+%% additive quantum numbers??
+\end{frame}
+
+
+\begin{frame}
+  \begin{prop}[Modified dictionary definition; Penrose] The
+    antiparticle of $p$ is the particle $\ol p$ with \emph{opposite}
+    values for each \emph{additive} essential quantity. \end{prop}
+
+  %% quote from Oxford dictionary
+\bigskip \pause
+
+\begin{quote}``\ldots a quantum number \dots is `additive' if, in
+  order to derive its value for a composite entity, we simply add up
+  the individual values for the constituent particles'' \end{quote}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{The opposite of a property}
+
+\bigskip {\small Newton's third law: For every force acting on an
+  object, the object will exert an equal, yet \emph{opposite}, force
+  on its cause.}  \bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ll|ll}
+  Opposites  & & & No Opposites \\
+  \hline 
+   & & & Temperature \\
+  Newtonian Forces & & &   \\
+  Electric Charge & & &  Position in post-Aristotelian space \\
+  Relative Position in STR &&& Relative Position in GTR  \\
+  &&& Ounces of gold     \\
+  Essential quantities in &&& \\ 
+  quantum field theory \end{tabular}
+\end{center}
+\end{frame}
+
+
+
+
+\section{Antimatter and the structure of quantities}
+
+\begin{frame}
+  \frametitle{Abelian quantum numbers (e.g.\ electric charge)}
+% isn't there a common theme here in that they are both "forces"?
+% isn't GTR based on the idea that forces themselves are not
+% absolute?
+% cf. Norton's article about Newtonian cosmology
+\begin{itemize}
+\item There are an infinite number of charges $\{ \dots
+  ,-2,-1,0,1,2,\dots \}$.
+\item Charges can be \textbf{composed}, and the composition operation
+  is modelled by addition of real numbers.  
+\item There is a unique \textbf{neutral} charge, to which we assign
+  value $0$.
+% \item The gauge transformations of electric charge are also a group.
+% \item These two groups are ``duals'' of each other.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Nonabelian quantum numbers (e.g.\ isospin)}
+Isospin takes values in $\{ 0,\frac{1}{2},1,\frac{3}{2},\dots \}$
+
+Composition rules:
+\begin{eqnarray*} 
+i\otimes 0 &=& 0\otimes i \:=\: i \\ \\
+\textstyle \frac{1}{2}\otimes \frac{1}{2}& =& 0\oplus 1 \\ \\
+\textstyle 1\otimes \frac{1}{2}&=& \textstyle \frac{1}{2}\oplus 1 \oplus
+\frac{3}{2} \\ \\
+i\otimes j &= & \bigoplus _{k=|i-j|}^{i+j}k \end{eqnarray*}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Nonabelian quantum numbers}
+What is this second operation ``$\oplus$'' that appears on the right
+hand side of equations involving ``$\otimes$''? \pause
+\begin{itemize} 
+\item Role in empirical predictions: \newline \textit{If $i\otimes
+    j=k_1\oplus \cdots \oplus k_n$, then a collision of particles with
+    quantum numbers $i$ and $j$ results in a mixture of particles with
+    quantum numbers $k_1,\dots ,k_n$.} \pause
+\item Mathematical structure: \newline $x=k_1\oplus \cdots \oplus k_n$
+  means that $k_1,\dots ,k_n$ are ``parts'' of $x$, i.e.\ there are
+  orthogonal embeddings of the objects $k$ in the object $x$.  (Each
+  of the objects $0,\frac{1}{2},1,\frac{3}{2},\dots$ is itself
+  irreducible.) \pause
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conjugate objects}
+\textbf{Definition:} The conjugate of $i$ is the unique object $j$
+such that $0$ occurs in the decomposition of $i\otimes j$. \pause
+
+\bigskip
+\begin{itemize}
+\item Electric charge: the conjugate of $i$ is $-i$, and $i\neq
+  -i$.\pause
+\item Isospin: the conjugate of $i$ is $i$.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{The magic symmetry principle}
+
+  Gell-Mann et al.: The quantum numbers are objects of the dual of the
+  symmetry group of the theory. \pause
+
+  \bigskip
+
+  \textbf{Examples:} 
+\begin{itemize}
+\item The symmetry group for isospin is $SU(2)$.  In the dual of
+  $SU(2)$, each object is self-conjugate; hence, each isospin quantum
+  number is its own inverse. \pause 
+\item The symmetry group for charge is $U(1)$, and the dual of
+  $U(1)$ is the group $\mathbb{Z}$ of integers. \pause \end{itemize}
+
+\bigskip
+
+\textbf{Problem:} Why does this work?  What does the dual of the
+  symmetry group have to do with physical quantities?
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{The algebraic approach to quantum field theory}
+
+\begin{itemize}
+\item von Neumann: Schr{\"o}dinger's wave mechanics and Heisenberg's
+  matrix mechanics are provably equivalent. \pause
+\item van Hove, Friedrichs, Haag: Because quantum field theory (QFT)
+  has infinitely many degrees of freedom, von Neumann's uniqueness
+  theorem fails --- there are unitarily inequivalent
+  representations. \pause
+\item The existence of UIRs has been an interpretive stumbling block
+  for philosophers. \pause
+\end{itemize}
+
+\begin{ansatz}[Doplicher, Haag, Roberts]
+  Each UIR corresponds to an essential determinate (value of a
+  quantity) of elementary particles.
+\end{ansatz} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{DHR program: derive structure of quantities}
+
+  \textbf{Question:} Does the ``set'' of UIRs have an interesting
+  additional structure --- derivable from the physics? \pause
+
+\bigskip 
+\textbf{Answer:} Yes.  For any two representations $\pi$ and $\pi '$:
+\begin{itemize}
+\item There is a product representation $\pi\otimes \pi '$;
+\item There is a sum representation $\pi \oplus \pi '$;
+\item There is a unique identity representation $\pi _0$ such that
+  $\pi \otimes \pi _0 = \pi =\pi _0\otimes \pi$;
+\item There is a unique conjugate representation $\ol\pi$ such that
+  $\pi\otimes \ol\pi$ and $\ol\pi\otimes\pi$ contain a single copy of
+  $\pi _0$.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{DHR program: derive structure of quantities}
+
+  What is this unfamiliar mathematical structure? \pause
+
+\bigskip
+\begin{itemize}
+\item A \emph{category} consists of objects (e.g.\ the
+  representations), and arrows (e.g.\ transformations between
+  representations). \pause
+\item A \emph{tensor category} is a category with a binary operation
+  $\otimes$ on objects and arrows, and a tensor unit
+  $1_{\mathcal{C}}$, that satisfy certain laws (e.g.\ associativity). \pause
+\item A tensor category has \emph{conjugates} just in case for each
+  object $X$ there is an object $\ol X$ such that $X\otimes \ol X$ and
+  $\ol X\otimes X$ contain a single copy of the tensor unit
+  $1_{\mathcal{C}}$.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{De-mystifying the magic symmetry principle}
+\begin{thm}[Doplicher-Roberts 1990] The category of UIRs is equivalent to
+  the dual of a symmetry group.  
+\end{thm}
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Metaphysical lessons}
+\begin{itemize}
+\item Stop equating ``quantity'' with ``something representable by
+  real numbers'' --- that is just a \emph{special case}.  (Corollary:
+  Rethink the contrast between ``qualitative'' and ``quantitative''.) \pause
+\item Contra Mundy: don't need to resort to a second order theory of
+  quantity, because any two physical objects have a ``sum''. \pause
+\item Contra Mundy and Denby: determinates do have structure, but look
+  to fundamental physics to tell us what it is. \pause
+% \item Contra Balashov: having value zero for a quantity is not the
+%  same as lacking a quantity. \pause
+\item Contra the trend of relativizing: ``zero'' is in some cases
+  objective and absolute.
+\end{itemize}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,153 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{qtree}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+% \usepackage{mathpartir}
+\usepackage{bbm}
+\usepackage[mathcal]{euscript}
+% \usepackage[utf8]{inputenc}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern} \title{Algebraic quantum field theory}
+\author{Hans Halvorson}
+\date[November 2013]{November 12, 2013} \usetheme{Copenhagen}
+\begin{document}
+\def\2{\mathcal}
+\def\7{\mathbb}
+\newenvironment{proenv}{\only{\setbeamercolor{local structure}{fg=green}}}{}
+\newenvironment{conenv}{\only{\setbeamercolor{local structure}{fg=red}}}{}  
+\newenvironment{neuenv}{\only{\setbeamercolor{local
+      structure}{fg=yellow}}}{}
+
+
+\newcommand{\3}{\mathfrak}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Haag-Kastler axioms}
+
+  Let $\2M$ be Minkowski spacetime.  For each double cone $O$, we
+  assume that $\2A (O)\subseteq \2A$ is a $C^*$-algebra.  The algebra
+  $\2A$ is called the \textbf{quasilocal} algebra of observables.
+
+  \bigskip \textbf{axiom 1 (isotony)} If $O_1\subseteq O_2$ then $\2A
+  (O_1)\subseteq \2A (O_2)$.
+
+  \bigskip \textbf{axiom 2 (microcausality)} If $O_1$ is spacelike
+  separated from $O_2$ then $\2A (O_1)$ commutes with $\2A (O_2)$.
+
+  \bigskip \textbf{axiom 3 (translation covariance)} There is a
+  representation $x\mapsto \alpha _x$ of the translation group of
+  $\2M$ in the group of automorphism of $\2A$ such that
+$$ \alpha _x(\2A (O)) \: =\: \2A (O+x) .$$
+
+\end{frame}
+
+\begin{frame}{Haag-Kastler axioms}
+
+  \textbf{positive energy vacuum representation:} Let $\omega$ be a
+  translation invariant state of $\2A$, and let $(\2H ,\pi ,x\mapsto
+  U(x),\Omega )$ be the covariant GNS representation induced by
+  $\omega$.  Let $\2R (O)=\pi (\2A (O))''$.
+
+  \bigskip \textbf{axiom 4 (additivity)} For each double cone $O$, the
+  set $\{ \2R (O+x) :x\in \7R ^ 4 \}$ acts irreducibly on $\2H$.
+
+  \bigskip \textbf{axiom 5 (spectrum condition)} The four-momentum
+  $(P_0,P_1,P_2,P_3)$ has spectrum restricted to the forward light
+  cone.
+
+\end{frame}
+
+\begin{frame}{first consequences of the axioms}
+
+
+  \bigskip \textbf{Theorem (Reeh-Schlieder)} For any double cone $O$,
+  the vacuum vector $\Omega$ is cyclic for $\2R (O)$.  That is, $\{
+  A\Omega :A\in \2R (O) \}$ is dense in the Hilbert space $\2H$.
+
+  \bigskip Proof uses an analyticity argument, invoking the spectrum
+  condition.
+
+\end{frame}
+\begin{frame}{consequences of Reeh-Schlieder}
+
+  \bigskip \hspace*{2em} $\hookrightarrow$ the vacuum state is
+  entangled; is highly entropic in local regions
+
+  \bigskip \hspace*{2em} $\hookrightarrow$ the vacuum vector is
+  separating for localized operators: $A\Omega =0$ only if $A=0$
+
+  \bigskip \hspace*{2em} $\hookrightarrow$ no localized number
+  operators
+
+\end{frame}
+
+\begin{frame}{more consequences of the axioms}
+
+  \textbf{Theorem (Kadison)} Local algebras are of infinite type.
+
+  \bigskip \hspace*{2em} $\hookrightarrow$ corollary: for any two
+  spacelike separated regions, a dense set of states violates Bell's
+  inequality
+
+  \bigskip \hspace*{2em} $\hookrightarrow$ all states are mixed (no
+  normal states are pure)
+
+\bigskip \hspace*{2em} $\hookrightarrow$ example: in the model of the
+free Boson field, local algebras are type III$_1$.
+
+\end{frame}
+
+
+\begin{frame}{Bell's inequalities}
+
+  Given $C^*$-algebras $\2A$ and $\2B$, such that $[A,B]= 0$ for all
+  $A\in \2A$ and $B\in \2B$.
+
+A \textcolor{blue}{Bell operator} is of the form
+$$ R = \frac{1}{2}(A_1(B_1+B_2)+A_2(B_1-B_2)) ,$$
+where $A_i\in \2A$ and $B_i\in \2B$ are self-adjoint with
+$\| A_i\| \leq 1$ and $\| B_i \|\leq 1$.
+
+
+
+\end{frame}
+
+\begin{frame}{Bell's theorem}
+
+  The correlations for measurements of $A_i$ and $B_i$ in state
+  $\omega$ permit a \textcolor{blue}{local hidden variable model} just
+  in case $|\omega (R)|\leq 1$.
+
+\bigskip \bigskip \textcolor{blue}{Tsirelson bound:} All quantum states satisfy $|\omega (R)|\leq \sqrt{2}$.
+
+\bigskip For $\2A = M_2\otimes I$ and $\2B=I\otimes M_2$, and
+appropriate choice of spin operators $A_i$ and $B_i$, the singlet
+state \textcolor{blue}{maximally violates} Bell's inequality.
+
+\end{frame}
+
+\begin{frame}{Nonlocality in QFT}
+
+  \textbf{Theorem (Summers and Werner)} If $\2A$ and $\2B$ are the
+  algebras associated with the Rindler wedges, then
+  \textcolor{red}{every state} maximally violates Bell's inequality.
+
+  \bigskip \bigskip \textbf{Theorem (Clifton and Halvorson)} If $\2A$
+  and $\2B$ are algebras associated with any two spacelike separated
+  regions, then the set of Bell-violating states is dense in the state
+  space.
+
+
+
+\end{frame}
+
+\end{document}

@@ -306,3 +306,118 @@
   - dependency Tmodel.pdf
   - dependency quineexamplemodels.pdf
   - dependency grcategory.pdf
+
+# Stage B (older decks from ~/research)
+
+## texas2007
+- texas.pdf (copied from research/antimatter)
+- texas.tex (copied from research/antimatter)
+
+## irvine2013
+- structural-foundations.tex (copied from research/.)
+
+## cuny2013
+- cuny-slides.tex (copied from research/.)
+
+## uwo2013
+- uwo-slides.pdf (copied from research/.)
+- uwo-slides.tex (copied from research/.)
+
+## cmu2013
+- theories.bib (copied from research/.)
+- theories.tex (copied from research/.)
+
+## madrid2013
+- madrid.pdf (copied from research/.)
+- madrid.tex (copied from research/.)
+- madrid-aqft.pdf (copied from research/.)
+- madrid-aqft.tex (copied from research/.)
+- madrid-cbh.pdf (copied from research/.)
+- madrid-cbh.tex (copied from research/.)
+- madrid-particles.pdf (copied from research/.)
+- madrid-particles.tex (copied from research/.)
+- madrid-rindler.pdf (copied from research/.)
+- madrid-rindler.tex (copied from research/.)
+
+## cambridge2014
+- dung-slides.pdf (copied from research/.)
+- dung-slides.tex (copied from research/.)
+  - MISSING dependency /Users/hhalvors/Downloads/aquinas.jpg (for dung-slides.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/bayes.jpg (for dung-slides.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/singularity.png (for dung-slides.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/phasespace.png (for dung-slides.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/manifold.png (for dung-slides.tex)
+
+## oxford2014
+- dung-ox.pdf (copied from research/.)
+- dung-ox.tex (copied from research/.)
+  - MISSING dependency /Users/hhalvors/Downloads/singularity.png (for dung-ox.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/phasespace.png (for dung-ox.tex)
+  - MISSING dependency /Users/hhalvors/Downloads/manifold.png (for dung-ox.tex)
+
+## lse2014
+- surplus.pdf (copied from research/.)
+- surplus.tex (copied from research/.)
+
+## psa2014
+- psa2014-hh.pdf (copied from research/.)
+- psa2014-hh.tex (copied from research/.)
+  - dependency grp1category.pdf
+
+## nagoya2015
+- nagoya.pdf (copied from research/.)
+- nagoya.tex (copied from research/.)
+
+## munich2016
+- munich-slides.pdf (copied from research/.)
+- munich-slides.tex (copied from research/.)
+  - dependency definitionalequivalence.pdf
+  - dependency grp1category.pdf
+  - dependency affine1.pdf
+  - dependency 1-3v3-1.pdf
+  - dependency sigmastructure.pdf
+  - dependency Tmodel.pdf
+  - dependency quineexamplemodels.pdf
+  - dependency grcategory.pdf
+
+## stanford2017
+- stanford2.pdf (copied from research/.)
+- stanford2.tex (copied from research/.)
+  - dependency definitionalequivalence.pdf
+  - dependency grp1category.pdf
+  - dependency affine1.pdf
+  - dependency 1-3v3-1.pdf
+  - dependency sigmastructure.pdf
+  - dependency Tmodel.pdf
+  - dependency quineexamplemodels.pdf
+  - dependency grcategory.pdf
+
+## buenos2017
+- buenos-slides.pdf (copied from research/.)
+- buenos-slides.tex (copied from research/.)
+  - dependency solsorten.pdf
+  - dependency affine1.pdf
+  - dependency grp1category.pdf
+
+## apa2020
+- apa2020-slides.pdf (copied from research/.)
+- apa2020-slides.tex (copied from research/.)
+  - dependency definitionalequivalence.pdf
+  - dependency grp1category.pdf
+  - dependency affine1.pdf
+  - dependency 1-3v3-1.pdf
+  - dependency sigmastructure.pdf
+  - dependency Tmodel.pdf
+  - dependency quineexamplemodels.pdf
+  - dependency grcategory.pdf
+
+## copenhagen2022
+- bohrs-plads.pdf (copied from research/.)
+- bohrs-plads.tex (copied from research/.)
+
+## bohr-potsdam
+- bohr-unity.pdf (copied from research/.)
+- bohr-unity.tex (copied from research/.)
+
+## PDFs built in stage B
+- irvine2013/structural-foundations.pdf, cuny2013/cuny-slides.pdf, cmu2013/theories.pdf: no PDF survived; built from the .tex with latexmk -pdf (TeX Live 2023), 2026-10-25.

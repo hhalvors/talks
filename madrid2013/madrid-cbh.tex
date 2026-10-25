@@ -1,0 +1,126 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{qtree}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+% \usepackage{mathpartir}
+\usepackage{bbm}
+\usepackage[mathcal]{euscript}
+% \usepackage[utf8]{inputenc}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern} \title{The CBH theorem}
+\author{Hans Halvorson}
+\date[November 2013]{November 12, 2013} \usetheme{Copenhagen}
+\begin{document}
+\def\2{\mathcal}
+\def\7{\mathbb}
+\newenvironment{proenv}{\only{\setbeamercolor{local structure}{fg=green}}}{}
+\newenvironment{conenv}{\only{\setbeamercolor{local structure}{fg=red}}}{}  
+\newenvironment{neuenv}{\only{\setbeamercolor{local
+      structure}{fg=yellow}}}{}
+
+%% A theory is _nothing less_ than a category ... but it may be more.
+
+\newcommand{\3}{\mathfrak}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+
+  \textbf{Goal:} Distinguish between classical and quantum theory in
+  terms of their distinctive information-theoretic characteristics.
+
+  \bigskip \textbf{Constraint:} To \textbf{prove} a characterization
+  theorem, we must assume a background mathematical framework that is
+  general enough to accommodate both classical and quantum sytems.
+
+\end{frame}
+
+\begin{frame}{classical mechanics with $C^*$-algebras}
+
+  If $X$ is the phase space of a classical system, then its
+  observables are represented by elements of $C(X)$, the continuous
+  functions from $X$ to $\7C$ that are constant at infinity.
+
+  \bigskip $C(X)$ has pointwise sums, products, and complex
+  conjugates.  Equipped with the supremum norm, it is an
+  \textbf{abelian} or \textbf{commutative} $C^*$-algebra.
+
+  \bigskip The pure states of $C(X)$ correspond to points in $X$.  The
+  mixed states of $C(X)$ correspond to probability measures on $X$.
+
+\end{frame}
+
+\begin{frame}{composite classical systems}
+
+If $Y$ is the phase space of another classical system, then:
+$$ C(X\times Y) \: \simeq \: C(X)\otimes C(Y) .$$
+
+\bigskip \textbf{Fact:} No states are entangled across $C(X)\otimes
+C(Y)$.  The Bell inequality is satisfied in all states.  (Easy proof
+using the fact that $C(X)$ and $C(Y)$ are abelian.)
+
+\end{frame}
+
+\begin{frame}{cloning}
+
+  The system $\2A\otimes\2A$ allows \textbf{cloning} just in case
+  there is a state $\omega$ of $\2A$ and a CP map
+  $T:\2A\otimes\2A\to\2A\otimes\2A$ such that
+$$ T^*(\rho\otimes\omega ) \: = \: \rho\otimes\rho ,$$
+for all states $\rho$ of $\2A$.
+
+\bigskip \textbf{Fact:} The system $C(X)\otimes C(X)$ allows cloning.
+
+\smallskip \textbf{Proof:} Verify that any homomorphism $f:Y\to Z$
+gives rise to a CP map $f^*:C(Z)\to C(Y)$.  Then note that the map
+$f(\langle x,z\rangle )=\langle x,x\rangle$ is a homomorphism.
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{all classical systems allow cloning}
+
+  According to the \textbf{Gelfand representation theorem}, a
+  $C^*$-algebra $\2A$ is abelian iff $\2A\simeq C(X)$ for some
+  topological space $X$.
+
+  \bigskip \textbf{Corollary:} If $\2A$ is commutative then
+  $\2A\otimes\2A$ allows cloning.
+
+
+
+\end{frame}
+
+\begin{frame}{no quantum system allows cloning}
+
+  \textbf{New use for an old concept:} If $K$ is a convex set, and
+  $x,y\in K$, then the \textbf{affine ratio} between $x,y$, written
+  $p(x|y)$, is the largest value of $f(y)$ where $f$  ... 
+
+  \bigskip \textbf{Fact:} The set of states of a classical system is a
+  simplex; hence the affine ratio between any two pure states is $0$.
+
+  \bigskip \textbf{Fact:} If $x,y$ are quantum states with affine
+  ratio $0$, then there is a continuous path of quantum states from
+  $x$ to $y$, achieving all intermediate affine ratios.
+
+
+
+
+
+
+\end{frame}
+
+
+\end{document}

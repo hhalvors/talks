@@ -1,0 +1,341 @@
+\documentclass{beamer}
+% \usepackage{color}
+\usepackage{graphicx}
+% \usepackage[all,cmtip]{xy}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{qtree}
+\usepackage{stmaryrd}
+% \usepackage{diagxy}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+% \usepackage{mathpartir}
+\usepackage{bbm}
+%\usepackage{pictexwd,dcpic}
+% \usepackage[mathcal]{euscript}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+\title{Explanation via Surplus Structure}
+\author{Hans Halvorson}
+\date{March 17, 2014}
+% \usetheme{Pittsburgh}
+\usetheme{Singapore}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+% \usetheme{Singapore}
+\usepackage{eucal}
+\begin{document}
+
+\def\2{\mathcal}
+\def\7{\mathfrak}
+\begin{frame}
+
+\maketitle
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+\item what is surplus structure in a scientific theory?
+\item structural ockham razor (SOCK): posit only those structures that
+  are needed to explain the phenomena
+\item converse SOCK: if a mathematical structure is needed to explain
+  the phenomena, then it represents something real
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{quantum field theory \\ the problem of inequivalent representations}
+
+  \textcolor{green}{OBJECTIVE:} describe a quantum system
+  corresponding to a classical system with infinitely many degrees of
+  freedom $q_1,p_1,q_2,p_2,\dots $
+
+\bigskip
+
+\textcolor{red}{OBSTACLE:} embarrassment of riches --- many
+different, apparently non-equivalent, quantum descriptions
+
+
+
+
+\end{frame}
+
+\begin{frame}{inequivalent representations}
+
+\begin{itemize}
+\item quantization: given some equation $\mathbb{E}(x_1,\dots ,x_n)$,
+  find a Hilbert space $H$ and operators $a_1,\dots ,a_n$ on $H$ that
+  satisfy $\mathbb{E}$.
+\item algebrizing: there is an abstract algebra $A$ with operators
+  $a_1,\dots ,a_n\in A$ such that:
+\begin{enumerate}
+\item $E(a_1,\dots ,a_n)$,
+\item representations $\pi :A\to B(H)$ are in one-to-one
+  correspondence with quantizations of $\mathbb{E}$.
+\end{enumerate}
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{unitary equivalence}
+
+$$
+\begin{tikzcd}[ampersand replacement=\&]
+A \times H \arrow{r}{\pi } \arrow{d}[left]{1_A\times w } \& H \arrow{d}[right]{w} \\
+A \times K \arrow{r}[below]{\phi } \& K 
+\end{tikzcd}
+$$
+
+\end{frame}
+
+
+\begin{frame}{proposed solutions of INEQ}
+
+\begin{enumerate}
+\item hilbert space conservatism: there is one correct representation
+
+  {\small $\Longrightarrow$ choosing a representation involves a
+    further theoretical commitment}
+
+\bigskip
+
+\item algebraic imperialism: all physical information is in the
+  abstract algebra of observables
+
+  \smallskip {\small $\Longrightarrow$ choosing a representation entails no further theoretical commitment}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{crash course in algebraic quantum theory}
+
+\def\2{\mathcal}
+
+\begin{itemize}
+\item Observables are represented by operators in $A$.
+\item States are defined as mappings from observables to $\mathbb{R}$.
+\item A representation $\pi :A\to H$ induces a map $x\mapsto \pi
+  ^*(x)$ from state vectors in $H$ to states on $\2A$.
+$$ \pi ^*(x)(a) \: = \: \langle x,\pi (a)x \rangle .$$
+\item GNS theorem: for every state $\omega$ of $A$, there is a Hilbert
+  space $H$, a vector $x\in H$, and a representation $\pi :A\to H$
+  such that 
+$$\omega =\pi ^*(x) .$$
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{problems for h.s.\ conservatism}
+
+\begin{itemize}
+\item underdetermination: what reason for choosing a representation?
+\item what is gained by choosing a representation?
+\item what is lost by choosing a representation?
+\item what kind of epistemic commitment is it to choose a
+  representation? \newline
+``The system is in some state $\pi ^*(x)$.''
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{problems for algebraic imperialism}
+
+\begin{itemize}
+\item can we do quantum theory without a Hilbert space?  \newline
+% emerging theme: more structure than meets the eye 
+{\small states = functions from observable algebra to numbers \newline
+  dynamics = automorphism of the observable algebra \newline
+  parochial observables ???}
+\item too much structure? \newline
+there are too many states
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{the weak equivalence gambit}
+
+\begin{itemize}
+\item Fell's theorem: for state $x\in H$, observables $a_1,\dots
+  ,a_n\in A$, and $\epsilon >0$, there is a state $y\in K$ such that 
+$$ |\langle x,a_ix\rangle - \langle y,a_iy\rangle | \: < \: \epsilon .$$
+\item Claim (Segal, Robinson): any two representations are empirically equivalent
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{don't deflate representation}
+
+\begin{itemize}
+
+\item Ruetsche: physical equivalence $\Longrightarrow$ unitary
+  equivalence
+
+\item Fact: empirical equivalence $\Longrightarrow$ unitary
+  equivalence
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{do deflate representation}
+
+\begin{enumerate}
+\item intertranslatability $\Longrightarrow$ theoretical equivalence
+  (converse of Glymour 1970)
+\item Fact: there are ineq representations that are intertranslatable
+\item Conclusion: there are ineq representations that are
+  theoretically equivalent
+\end{enumerate}
+
+
+\end{frame}
+
+
+% now for the free Fermi field
+
+%% draw picture A(O) \subseteq F(O)
+
+%% A(O) = gauge invariant elements of F(O)
+
+%% A = inductive limit of all A(O), same with F
+
+%% two subspaces H_{-} and H_{+} that are invariant under action of A
+
+%% Fact: \pi _{-}(A) and \pi _{+}(A) are unitarily inequivalent, yet isomorphic
+
+%% Puzzle: Why not just throw away one of \pi _{-} or \pi _{+} ?
+
+
+
+\begin{frame}{free Majorana field}
+
+\begin{itemize}
+\item gauge transformation: $\gamma :F\to F$
+
+%% puzzle: if A is invariant under \gamma , then how does \gamma change sectors?
+
+%% perhaps Morsella explains the local endomorphisms?
+
+\item observables are fixed points in $F$ under action of $\gamma$
+\item two inequivalent representations: $\pi _+$ vacuum, $\pi _{-}$ charged
+\item localized automorphisms of $A$
+$$ \pi _{-}(a) \: \cong \: \pi _{+}(\theta (a)) .$$
+\item $H_{+}$ and $H_{-}$ are dynamical islands
+\item field operators map $H_{+}$ to $H_{-}$.
+\end{itemize}
+
+
+%% open question: what does the free Fermi field model explain?
+
+
+
+
+\end{frame}
+
+
+\begin{frame}{physical equivalence}
+
+\begin{itemize}
+\item The structure of $\pi _{+}$ is isomorphic to the structure of
+  $\pi _{-}$.
+\item Baker \& Halvorson: representations $\pi _{+}$ and $\pi _{-}$
+  are intertranslatable.
+
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{physical inequivalence}
+
+\begin{itemize}
+\item $\pi _+$ and $\pi _{-}$ are unitarily inequivalent.
+\item The vacuum state $\Omega$ is in $\pi _+$ and not in $\pi
+  _{-}$.
+\item In fact, $\pi _{+}$ and $\pi _{-}$ are empirically inequivalent.
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{the Buridan's ass of QFT}
+
+\begin{enumerate}
+\item The world is represented either by $\pi _{+}$ or by $\pi _{-}$, and not by both.  
+%% must choose a state
+%% does choosing a state require choosing a representation?
+%% does choosing a state give a representation for free?
+\item If the world is represented by $\pi _{+}$, it could equally well
+  be represented by $\pi _{-}$.
+%% the two representations are isomorphic in all ways!
+%% here I agree with Baker.  These two reps have the same representational power
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{the dilemma restated}
+
+\begin{enumerate}
+%% Ruetsche and Earman
+\item break the symmetry between the two representations
+%% Baker
+\item deny that there is any choice to be made
+%% suppose that Buridan's ass accepts PII
+%% he concludes that he is seeing double
+%% .. or suffering from an illusion
+%% the correct description is one in which there is just one haystack
+\end{enumerate}
+
+\bigskip
+common theme: ``freedom to choose a representation'' is
+theoretically insignificant
+
+% compare with: ``freedom to choose a coordinate chart'' is
+% theoretically insignificant
+
+\end{frame}
+
+\begin{frame}{relations between representations}
+
+Majorana particle is its own antiparticle \newline
+$\Longrightarrow$ two Majorana particle state is in the vacuum sector
+
+\bigskip
+\[ \begin{array}{lll}
+\pi _{-}\otimes \pi _{-} & \cong & \pi _{+}  \\ \\
+\pi _{+}\otimes \pi _{+} & \cong & \pi _{+} \end{array} \]
+
+
+\end{frame}
+
+\begin{frame}{conclusions}
+
+\begin{enumerate}
+\item the best explanation might require non-representational
+  structures
+\item corollary: essential $\not\Longrightarrow$ representational
+\item for future research: what kinds of non-representational
+  structures occur in our best theories, and what theoretical roles do
+  they play?
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+\end{document}
