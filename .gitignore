@@ -51,3 +51,4 @@ _minted*/
 !/README.md
 !/INVENTORY.tsv
 !/MIGRATION-LOG.md
+!.nojekyll
