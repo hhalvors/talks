@@ -52,3 +52,6 @@ _minted*/
 !/INVENTORY.tsv
 !/MIGRATION-LOG.md
 !.nojekyll
+
+# third-party scan, kept locally for building b4bohr only
+b4bohr/hegels-philosophie.pdf
