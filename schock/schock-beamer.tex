@@ -1,0 +1,354 @@
+\documentclass[11pt,aspectratio=169]{beamer}
+\usetheme{metropolis}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds}
+\usepackage{xcolor}
+
+% ---- colour palette ----
+\definecolor{ink}{HTML}{22303A}
+\definecolor{accent}{HTML}{8C2F1E}      % deep terracotta
+\definecolor{accent2}{HTML}{2F6F8C}     % slate blue
+\definecolor{faint}{HTML}{9AA7AE}
+\setbeamercolor{frametitle}{bg=ink}
+\setbeamercolor{normal text}{fg=ink}
+\setbeamercolor{alerted text}{fg=accent}
+\setbeamercolor{progress bar}{fg=accent}
+\setbeamercolor{title separator}{fg=accent}
+
+\metroset{block=fill,sectionpage=progressbar,numbering=none}
+
+% ---- helper for image placeholders ----
+\newcommand{\imgph}[2]{% width, caption
+  \begin{tikzpicture}
+    \node[draw=faint,dashed,minimum width=#1,minimum height=0.62\textheight,
+          align=center,text=faint,rounded corners=2pt,inner sep=6pt]
+      {\footnotesize\itshape #2};
+  \end{tikzpicture}}
+
+% genealogy node styles
+\tikzset{
+  gnode/.style={draw=accent2,line width=0.6pt,rounded corners=2pt,
+    fill=accent2!6,inner sep=5pt,font=\small,align=center},
+  gnodeA/.style={draw=accent,line width=0.6pt,rounded corners=2pt,
+    Fill=accent!7,inner sep=5pt,font=\small,align=center},
+  garr/.style={-{Stealth[length=5pt]},line width=0.7pt,draw=ink!70},
+}
+
+\title{Er musste das Wissen aufheben}
+\subtitle{van Fraassen on the priority of the manifest image}
+\author{Hans Halvorson}
+\institute{Princeton University}
+\date{Schock Prize Symposium}
+
+\begin{document}
+
+{
+\setbeamertemplate{footline}{}
+\maketitle
+}
+
+% =====================================================================
+\section{Mission accomplished?}
+
+\begin{frame}[standout]
+  Mission accomplished?
+\end{frame}
+
+\begin{frame}{Mission accomplished?}
+  \centering
+  \imgph{0.7\textwidth}{[ image: ``Mission Accomplished'' banner ]}
+\end{frame}
+
+\begin{frame}{The mission: a new way of doing philosophy}
+  \begin{center}
+    \large ``I do not think we need new theories in philosophy.\\
+    But \ldots\ we must change, or change back,\\ the way we do
+    philosophy.''
+  \end{center}
+  \vspace{1.2em}
+  \begin{center}
+    {\small\color{faint} technical work, yes --- but in aid of an \emph{authentic, engaged\\
+    project in the world}, conscious of its own limits}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Not that kind of anti-realist}
+  \begin{center}
+    The expected story: an ``anti-realist'' makes science\\
+    \emph{mere instrument} --- with nothing to say about who we are.
+  \end{center}
+  \vspace{1.4em}
+  \begin{center}
+    \alert{But Bas never abandons ``know thyself.''}\\[6pt]
+    {\small\color{faint} science still has yield for the \emph{gnothi seauton} project}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Where we are going}
+  \begin{enumerate}
+    \item The Sellarsian challenge
+    \item Bas's response
+    \item A Danish story
+    \item \emph{Er musste das Wissen aufheben}
+  \end{enumerate}
+\end{frame}
+
+% =====================================================================
+\section{The Sellarsian challenge}
+
+\begin{frame}{Pittsburgh, c.\,1960}
+  \begin{center}
+    \Large
+    Grünbaum \quad$\cdot$\quad Sellars \quad$\cdot$\quad Kockelmans
+  \end{center}
+  \vspace{1em}
+  \begin{center}
+    {\small\color{faint} the problematic of a career is set}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Sellars (1962)}
+  \begin{center}
+    \large ``Philosophy and the Scientific Image of Man''
+  \end{center}
+  \vspace{0.5em}
+  \begin{center}
+    {\small\color{faint} in the air in Pittsburgh --- witness \emph{The Scientific Image}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Two images}
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \centering
+      \textbf{\color{accent}Manifest}\\[4pt]
+      {\small persons · colours · reasons}\\[10pt]
+      \imgph{0.85\columnwidth}{[ Eddington's table:\\ solid, brown ]}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \textbf{\color{accent2}Scientific}\\[4pt]
+      {\small particles · fields · the void}\\[10pt]
+      \imgph{0.85\columnwidth}{[ Eddington's table:\\ mostly empty space ]}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Sellars's pink ice cube}
+  \centering
+  \imgph{0.55\textwidth}{[ image: a pink ice cube ]}\\[6pt]
+  {\small\color{faint} pink all the way through --- but nowhere in the scientific image}
+\end{frame}
+
+\begin{frame}{Priority?}
+  \begin{center}
+    \large Sellars on the fence
+  \end{center}
+  \vspace{1em}
+  \begin{quote}
+    \small ``To the extent that the manifest does not survive in the synoptic
+    view, to that extent man himself would not survive.''
+  \end{quote}
+  \hfill{\footnotesize\color{faint}— a ``stereoscopic vision''}
+\end{frame}
+
+\begin{frame}{Closing the circle}
+  \begin{center}
+    Quine \;·\; Shimony \;·\; Lewis \;·\; Albert \& Loewer \;·\; Dennett
+  \end{center}
+  \vspace{1.5em}
+  \begin{center}
+    {\small an old ambition} \quad$\longleftarrow$\quad \textbf{Spinoza}
+  \end{center}
+\end{frame}
+
+\begin{frame}[standout]
+  What kind of \emph{fact}\\ is ``priority''?
+\end{frame}
+
+\begin{frame}{A stance --- not a discovery}
+  \begin{center}
+    To rank the images is not to report a finding.\\[1em]
+    \alert{It is to declare what you value.}
+  \end{center}
+\end{frame}
+
+% =====================================================================
+\section{What was Bas's response?}
+
+\begin{frame}{The uncharitable reading}
+  \begin{center}
+    \itshape ``Bas is really one of those 1960s existentialists\\
+    who just doesn't want to be told what to do.''
+  \end{center}
+  \vspace{1em}
+  \begin{center}
+    {\small\color{faint} --- an unnamed colleague}
+  \end{center}
+\end{frame}
+
+\begin{frame}{The European van Fraassen}
+  \centering
+  \begin{tikzpicture}[node distance=9mm and 16mm]
+    \node[gnode] (vf) {van Fraassen};
+    \node[gnodeA,above left=of vf]  (kock) {Kockelmans};
+    \node[gnodeA,above=of vf]       (kant) {neo-Kantian\\strands};
+    \node[gnodeA,above right=of vf] (exist){existentialism};
+    \node[gnode,right=22mm of vf]   (james){William James};
+    \draw[garr] (kock)  -- (vf);
+    \draw[garr] (kant)  -- (vf);
+    \draw[garr] (exist) -- (vf);
+    \draw[garr] (james) -- (vf);
+  \end{tikzpicture}
+  \vspace{0.5em}
+  \\{\footnotesize\color{faint} (Høffding and James were friends)}
+\end{frame}
+
+\begin{frame}{``The Manifest Image and the Scientific Image''}
+  \begin{center}
+    The dichotomy is \alert{confused from the start.}
+  \end{center}
+  \vspace{1em}
+  \begin{itemize}
+    \item an ``image'' is not to be found \emph{within} the scientific image
+    \item Sellars speaks from a place his story has no room for
+  \end{itemize}
+  \vspace{0.5em}
+  \hfill{\footnotesize\color{faint} cf.\ Putnam on Williams's ``absolute conception''}
+\end{frame}
+
+\begin{frame}{\emph{The Empirical Stance}: a shift}
+  \begin{center}
+    \large image \quad$\longrightarrow$\quad \alert{objectifying inquiry}
+  \end{center}
+  \vspace{1.2em}
+  \begin{center}
+    not a picture \emph{inside} us\\
+    but a \emph{mode of approach} --- one that removes the subject
+  \end{center}
+\end{frame}
+
+\begin{frame}{Two roads to the same critique}
+  \centering
+  \begin{tikzpicture}[node distance=7mm and 10mm]
+    % phenomenological line
+    \node[gnodeA] (k1) {Kierkegaard};
+    \node[gnodeA,right=of k1] (hus) {Husserl};
+    \node[gnodeA,right=of hus] (koc) {Kockelmans};
+    \node[gnodeA,right=of koc] (vf) {van Fraassen};
+    \draw[garr] (k1)--(hus); \draw[garr] (hus)--(koc); \draw[garr] (koc)--(vf);
+    % danish line
+    \node[gnode,below=14mm of k1] (sm) {Sibbern\\\& Møller};
+    \node[gnode,right=of sm] (k2) {Kierkegaard};
+    \node[gnode,right=of k2] (ni) {Nielsen};
+    \node[gnode,right=of ni] (ho) {Høffding};
+    \node[gnode,right=of ho] (bo) {Bohr};
+    \draw[garr] (sm)--(k2); \draw[garr] (k2)--(ni);
+    \draw[garr] (ni)--(ho); \draw[garr] (ho)--(bo);
+  \end{tikzpicture}
+  \vspace{0.8em}
+  \\ \alert{the subject cannot be eliminated from inquiry}
+\end{frame}
+
+% =====================================================================
+\section{The Danish story}
+
+\begin{frame}{Hegel}
+  \begin{center}
+    \large objectifying inquiry \emph{on steroids}\\[1em]
+    {\small\color{faint} the System with no remainder, no open place}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Sibbern \& Møller}
+  \begin{itemize}
+    \item not adequate to the natural sciences
+    \item not adequate to the richness of life
+  \end{itemize}
+  \vspace{1em}
+  \begin{center}
+    \alert{$\gamma\nu\tilde\omega\theta\iota\ \sigma\varepsilon\alpha\upsilon\tau\acute o\nu$}\\[4pt]
+    {\small man is still \emph{becoming} --- not yet a god}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Kierkegaard}
+  \begin{center}
+    The speculative philosopher is \alert{forgetful.}
+  \end{center}
+  \vspace{1em}
+  \begin{center}
+    {\small what he has forgotten is \emph{who he himself is}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Rasmus Nielsen \;(1809--1884)}
+  \begin{center}
+    Kierkegaard's mantle $\rightarrow$ philosophy of science\\[1em]
+    \alert{objektiveringsloven}\\[4pt]
+    {\small\color{faint} the law of objectification}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Harald Høffding}
+  \begin{itemize}
+    \item no objectification is ever \emph{final}
+    \item science cannot be purged of its \emph{anthropocentric} elements
+  \end{itemize}
+  \vspace{1em}
+  \begin{center}
+    {\small\itshape ``When will the last anthropomorphism be found?''}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Niels Bohr}
+  \begin{center}
+    \large complementarity\\[8pt]
+    {\small = Høffding's relationist epistemology,\\ \emph{physically implemented}}\\[10pt]
+    \alert{the subject stays in the picture --- by necessity}
+  \end{center}
+\end{frame}
+
+% =====================================================================
+\section{Back to Bas's mission}
+
+\begin{frame}[standout]
+  Ich musste das Wissen\\ aufheben
+\end{frame}
+
+\begin{frame}{Not ``restrict''}
+  \begin{center}
+    ``restricting'' knowledge $\Rightarrow$ two eyes, two worlds\\[1em]
+    \alert{aufheben}: cancel · preserve · lift up\\[1em]
+    {\small \emph{Wissen} is a \emph{moment} --- not the telos}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Kierkegaard's correction}
+  \begin{center}
+    The dialectic is not out there.\\[1em]
+    \alert{It is in each one of us.}
+  \end{center}
+\end{frame}
+
+\begin{frame}[standout]
+  tilegne\\
+  {\normalsize to appropriate --- to make one's own}
+\end{frame}
+
+\begin{frame}{The mission}
+  \begin{center}
+    Not a doctrine to be axiomatized,\\
+    but an example to be \emph{appropriated}.\\[1.5em]
+    \large\alert{Bas --- mission accomplished.}
+  \end{center}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

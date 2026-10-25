@@ -1,0 +1,235 @@
+#+TITLE: What is this thing, /determinism/? 
+#+AUTHOR: Hans Halvorson 
+#+DATE: January 9, 2025
+#+FILETAGS: deterministic-theory philosophy physics
+
+* Introduction
+  - A word of thanks to Klaas Landsman and Jeremy Butterfield
+  - The hole argument as *occasion* for discussing determinism
+    "Determinism wins our unceasing admiration in forcing to the
+    surface many of the more important and intriguing issues in the
+    length and breadth of the philosophy of science." (Earman, Primer
+    of Determinism, p 21)
+  - The Viking approach to philosophy of science  
+
+* Introduction
+  - Brief overview of deterministic theories.
+  - Key questions to explore:
+    - What are the defining features of a deterministic theory?
+    - How does determinism relate to physical laws and initial conditions?
+    - Are there examples of controversial or borderline deterministic theories?
+
+* Determinism: attractive or repulsive? 
+  - Some philosophers have been repulsed by determinism because it
+    would seem to preclude human freedom.
+  - Other philosophers have been attracted by determinism because it
+    would seem to make our world intelligible, predictable, and
+    perhaps even controllable.
+
+* Philosophical resistance to natural philosophy
+  - Compatibilism might actually be true. But I suspect that it is
+    also motivated by a philosophical division of labor that we ---
+    pursuers of natural philosophy --- would reject.
+  - Γνῶθι σεαυτόν
+
+* Determinism as an ontological thesis
+  - [[pdf:~/bibliotek/Earman, John/primer-determinism.pdf::1][Earman, Primer of Determinism]]
+  "The Jamesian vision we are seeking to capture is an ontological
+  vision." (p 7)
+  - What the hell is this supposed to mean --- that it's an
+    ontological thesis? I myself am not inclined to think of a theory
+    as a description of a collection of possible worlds and things
+    inside them. That's not how the theories we are familiar with
+    work.
+
+    What kind of things would exist, and what kinds of relations would
+    they have to each other?    
+
+* Belot's false dilemma
+
+"How do we decide whether or not a physical theory is deterministic?
+You can find two sorts of answer to this question in contemporary
+philosophical discussions. The older one is an inheritance from
+logical empiricism: it makes determinism a formal property of theories
+considered as linguistic entities. The more recent one is unabashedly
+metaphysical: it takes determinism to be a matter of possible futures,
+and thus involves us in modal metaphysics.
+
+My purpose here is to convince you that there are good reasons for
+favouring the more recent view: I argue that you cannot decide whether
+or not a theory is deterministic without knowing something about the
+interpretation of the theory. Thus determin- ism cannot be a formal
+property of theories. On the other hand, providing an interpretation
+for a theory naturally involves dealing with possibilia." (Determinism
+and ontology, p 85)
+
+"This completes the argument: determinism cannot be a formal property
+of theories, because the same theory may be deterministic or
+indeterministic, depending on how it is interpreted." (p 88)
+
+* Interpretation is just more formalism
+
+- A possible worlds analysis /is/ a formal analysis.
+- An /interpretation/ of a theory includes a specification of identity
+  criteria between models.
+
+* Determinism: from material to formal mode of speech
+  - The notion of one event *determining* another is closely related
+    to the notion of a cause.
+  - The earliest analyses of determinism were *syntactic*  
+  - Carnap
+    [[file:carnap-test.jpg]]
+  
+
+* Possible worlds analyses
+
+  - GTR (interpreted literally) might commit us to the existence of
+    spacetime points, but surely it doesn't commit us to modal
+    realism.
+
+  - The development of semantics and model theory changed the
+    standards of philosophical analysis.
+  - In some cases, it was not just the analysans that invoked new
+    concepts (sets, worlds, ,etc), but the analysandum itself was
+    changed.
+    - For example, instead of completing "a theory T is deterministic
+      if ... ", one completed "a world W is deterministic if ... ".
+    - The latter is problematic for those of us, like Carnap, who
+      worry about mixed-mode sentences.
+  - A possible worlds analysis of determinism is found in
+    Earman 1986. Was it the first? 
+    [[file:earman-test.jpg]]
+    "The world $W\in\mathcal{W}$ is \emph{Laplacian deterministic}
+    just in case for any "W'\in\mathcal{W}$, if $W$ and $W'$ agree at
+    any time, then they agree for all times." (p 13)
+  - Earman admits that there are pitfalls to the possible worlds
+    analysis. But he thinks that it's best to give an "ontological
+    formulation of an ontological doctrine".  [[file:earman2.jpg]]
+
+    "It might be charged that the possible worlds analysis is a fraud:
+    it is no more than a transcription of James' poetic vision into
+    terms which are devoid of James eloquence but which display not
+    much compensating gain in clarity and precision. I couldn't agree
+    more! But I also think that without prejudging detailed
+    substantive issues in physics we cannot do much better for a
+    direct ontological formulation of what is, after all, an
+    ontological doctrine." (p 14)
+
+
+* Detour: What is a theory?
+  - If we are going to complete "theory T is deterministic if ... ",
+    then we should be more clear about what kind of thing T is.
+  - Under the influence of van Fraassen, it was common to think of a
+    theory as a family of models.
+    - Tacitly assumed that the only -- or only interesting -- relation
+      between models is identity. 
+
+  
+* Melia's distinction
+  - In recent years it has become common to distinguish between
+    qualitative determinism and full determinism.
+  - [[pdf:~/bibliotek/Melia, Joseph/Melia-HolesHaecceitismTwo-1999.pdf::1][Melia, Holes and haecceitism]]  
+  - Back to formal mode
+  - Are spacetime theories (such as STR and GTR) non-haecceitistic by
+    nature?
+
+* Melia
+  "Call /haecceitism/ the view that there are distinct possibilities
+  that differ only over which objects play which roles." (p 640)
+
+  "Let us say that /D-haecceitism/ is the view that a theory may be
+  indeterministic, even if all the different possible futures open to
+  any world which makes the theory true are qualitatively identical."
+  (p 640)
+
+  "We say that a space-time theory $T$ is deterministic iff, for any
+  two models $M$ and $M^*$ of $T$, any histories $S$ and $S^*$, and
+  any objects $o$ and $o^*$, if there is a diffeomorphism $f:S\to S^*$
+  with $f(O_i)=O^*_i$ and $f(o)=o^*$, then there exists a global
+  isomorphism $g:M\to M^*$ with $g(O_i)=O^*_i$ and $g(o)=o^*$."
+  (p 656)
+
+  "A theory $T$ is deterministic iff, for any $T$-worlds $W$ and
+  $W^*$, and any histories $H$ and $H^*$, if $H$ is a duplicate of
+  $H^*$ and $f$ and one-to-one map from $H$ to $H^*$ which preserves
+  this duplication, then $f$ can be extended to $F$, a one-to-one map
+  from $W$ to $W^*$ which is, like $f$, a duplication." (p 659)
+    
+* From Stanford Encylopedia
+
+"A related response here is to redefine determinism, and to argue
+that, in the relevant sense, theories such as general relativity are
+deterministic after all, in spite of the hole argument. Modifications
+to the definition of determinism in light of the hole argument have
+been explored by Belot (1995b), Brighouse (1994, 2020), Butterfield
+(1989), Melia (1999), and Pooley (2021)."
+
+  
+    
+* Halvorson and Manchak's definition 
+
+*Definition:* We say that a theory $T$ is *deterministic* just in case
+  for any two models $M$ and $N$ of $T$, and initial segment
+  $U\subseteq M$, if $f:M\to N$ and $g:M\to N$ are isomorphisms such
+  that $f|_U=g|_U$, then $f=g$.
+  
+
+
+
+* Ideas and Concepts
+  - Theoretical Definitions
+    - Notes on definitions of determinism in literature.
+  - Connections to Physical Theories
+    - Examples: Newtonian mechanics, quantum mechanics, general
+      relativity.
+
+* Leibnizian spacetime
+
+- I think it's Butterfield who mentions that Earman mentions
+  Leibnizian spacetime. Or maybe it was Melia? 
+
+
+
+* Electromagnetism
+
+* PDF Annotations
+  - Below are links to PDFs for reference. Use org-noter to annotate them.
+  
+  ** Key References
+     - [[pdf:~/bibliotek/Earman, John/primer-determinism.pdf::1][Earman, Primer of Determinism]]
+     - [[pdf:~/bibliotek/Belot, Gordon/Belot-NewWorkCounterpart-1995.pdf::1]]
+     - [[pdf:~/bibliotek/Belot, Gordon/Determinism and ontology.pdf::1]]
+     - [[pdf:~/bibliotek/Melia, Joseph/Melia-HolesHaecceitismTwo-1999.pdf::1][Melia, Holes and haecceitism]]
+     - Halvorson, Closing the hole argument 
+     - Landsman, Re-opening the hole argument  
+     - [[pdf:~/bibliotek/Montague, Richard/deterministic-theories.pdf::1]]  
+     - Recent stuff by Pooley, Read, etc.?
+     - Menon and Read, Some remarks on recent formalist responses to
+       the hole argument [[pdf:~/bibliotek/Read, James/remarks-hole.pdf::1]]
+     - [[pdf:~/bibliotek/Landsman, Klaas/bohmian-deterministic.pdf::1]]  
+     - [[https://philpapers.org/browse/determinism]]
+     - [[pdf:~/bibliotek/Cudek, Franciszek/15BB8552-BC46-11EE-8419-F108F5211B22.pdf::1]]
+     - [[pdf:~/bibliotek/Brighouse, Carolyn/determinism-modality.pdf::1]]
+     - [[pdf:~/bibliotek/Brighouse, Carolyn/understanding-indeterminism.pdf::1]]    
+     - [[pdf:~/bibliotek/Teitel, Trevor/holes-spacetime.pdf::1][Teitel, Holes in spacetime]]
+       
+         
+       
+  ** Additional Resources
+     - [[file:~/bibliotek/additional_reading_1.pdf][Additional Reading 1]]
+       - Notes:
+     - [[file:~/bibliotek/additional_reading_2.pdf][Additional Reading 2]]
+       - Notes:
+
+* Questions for Discussion
+  - What is the role of initial conditions in deterministic theories?
+  - Can a theory be deterministic at one level and indeterministic at another?
+  - How does determinism connect with predictability?
+
+* To-Do
+  - [ ] Read and annotate PDFs using org-noter.
+  - [ ] Summarize main points from annotations.
+  - [ ] Draft a section on examples of deterministic theories.
+
+* Notes
+  - Add any additional ideas, thoughts, or observations here.

@@ -1,0 +1,53 @@
+# LaTeX / beamer build clutter
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+_minted*/
+.nordisk-build/
+*_files/
+.quarto/
+
+# editor leftovers
+*~
+\#*\#
+.DS_Store
+
+# third-party images: kept locally for building, never committed
+*.jpg
+*.jpeg
+*.JPG
+*.png
+*.PNG
+*.gif
+*.jp2
+*.webp
+*.wmf
+*.bmp
+*.tif
+*.tiff
+*.sb-*
+# PowerPoint files embed their images
+*.pptx
+*.key
+
+# private or superseded versions kept beside the published file
+*.with-notes
+*.local-*
+
+# loose files at the top level not yet sorted into a talk folder
+/*.*
+!/.gitignore
+!/README.md
+!/INVENTORY.tsv
+!/MIGRATION-LOG.md
